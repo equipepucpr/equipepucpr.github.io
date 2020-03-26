@@ -107,6 +107,31 @@ input, select, textarea {
  center;
 	}
 
+	#overlay {
+		position: fixed; /* Sit on top of the page content */
+		width: 100%; /* Full width (cover the whole page) */
+		height: 100%; /* Full height (cover the whole page) */
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+		cursor: pointer; /* Add a pointer on hover */
+	  }
+
+	.bg_video {
+		position: absolute; 
+		right: 0; 
+		bottom: 0;
+		min-width: 100%; 
+		min-height: 100%;
+		width: auto; 
+		height: auto; 
+		z-index: 0;
+		background: #383a3e;
+		background-size: cover; 
+	}
+
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
 			-webkit-animation: none !important;
@@ -3476,7 +3501,6 @@ input, select, textarea {
 			#banner {
 				padding: 7em 0 8.25em 0 ;
 				background-color: #2b3e52;
-				background-image: linear-gradient(to top, rgba(43, 62, 82, 0.8), rgba(43, 62, 82, 0.8)), url("../../images/bg.jpg");
 				background-size: auto,
  cover;
 				background-position: center,
@@ -3588,7 +3612,6 @@ input, select, textarea {
 		#wrapper > header {
 			padding: 9em 0 6.25em 0 ;
 			background-color: #2b3e52;
-			background-image: linear-gradient(to top, rgba(43, 62, 82, 0.8), rgba(43, 62, 82, 0.8)), url("../../images/bg.jpg");
 			background-size: auto,
  cover;
 			background-position: center,
@@ -4080,8 +4103,6 @@ input, select, textarea {
 	@media screen and (max-width: 1280px) {
 
 		#footer {
-			background-color: #2b3e52;
-			background-image: linear-gradient(to top, rgba(43, 62, 82, 0.8), rgba(43, 62, 82, 0.8)), url("../../images/bg.jpg");
 			background-size: auto,
  cover;
 			background-position: center,
